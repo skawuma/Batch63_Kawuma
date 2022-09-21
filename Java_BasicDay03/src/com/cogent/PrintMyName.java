@@ -1,24 +1,26 @@
-package java.basics;
+package com.cogent;
 
 /**
  * @author samuelkawuma
  *
  */
 
-public class PrintName {
+public class PrintMyName {
 	String name;
 	public String printName(String name) {
-		return name;
+		return this.name;
 		
 	
 	}
 	public static void main(String[] args) {
 		
-		PrintName n = new PrintName();
+		PrintMyName n = new PrintMyName();
 		
 	n.printName("Samuel Kawuma");
+	System.out.println(n);
 		
 	}
+
 
 }
 
