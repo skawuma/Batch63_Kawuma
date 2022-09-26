@@ -21,9 +21,9 @@ public static void main(String[] args) {
 	
 	int x[] = {2,3,4,5};
 	
-	//int r []= CopyArray.copied(x);
+	int r []= CopyArray.copied(x);
 	
-	System.out.println(Arrays.toString(x));
+	System.out.println(Arrays.toString(r));
 	
 }
 }
