@@ -7,10 +7,11 @@ package com.cogent.bean;
  */
 
 public class CustomerBean {
-	
+
+
 	private long  customerId;
 	private String customerName;
-	
+
 	/**
 	 * @param customerId
 	 * @param customerName
@@ -20,6 +21,12 @@ public class CustomerBean {
 		this.customerId = customerId;
 		this.customerName = customerName;
 	}
+	public CustomerBean(long customerId) {
+
+		this.customerId = customerId;
+
+	}
+
 	/**
 	 * @return the customerId
 	 */
@@ -45,6 +52,9 @@ public class CustomerBean {
 		this.customerName = customerName;
 	}
 
+	public String display() {
+		return " [customerId=" + customerId + ", customerName=" + customerName + "]" + "||" + " ";
+	}
 }
 
 
