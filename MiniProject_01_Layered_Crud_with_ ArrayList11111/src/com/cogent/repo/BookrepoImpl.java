@@ -34,8 +34,13 @@ public class BookrepoImpl implements BookRepo {
 
 	@Override
 	public void deleteById(int bookId) {
-		// TODO Auto-generated method stub
-		books.remove(bookId);
+		BookBean book=null;
+		for(int i=0; i<books.size();i++) {
+			book=books.get(i);
+			if(book.getBookId()==bookId)
+				books.remove(bookId);		
+		}
+	
 
 	}
 
