@@ -119,7 +119,7 @@ public class EmployeeLibrary {
 
 					employeeService.findYoungestEmployee();
 
-					System.out.print("\nPress Any Key to Return Back to the Menu?");
+					System.out.print("\nPress ESCAPE to Return Back to the Menu?");
 
 					answer = keyboard.next().charAt(0);
 
