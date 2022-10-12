@@ -156,10 +156,6 @@ public class JDBC_Examples04 {
 							
 
 						}
-						//res.close(); dt.close(); con.close();
-						//PreparedStatement psmt = con.prepareStatement("select  from Employee01s where stno=?");
-
-						//psmt.setInt (1,scanner.nextInt());
 
 						System.out.print("\n Do you want to Search More EmployeeIDs (y or n)?");
 
@@ -219,10 +215,6 @@ public class JDBC_Examples04 {
 						int i = psmt.executeUpdate();
 						System.out.println(i + " No of Recods are Deleted");
 						psmt.close(); con.close();
-
-						//PreparedStatement psmt = con.prepareStatement("select  from Employee01s where stno=?");
-
-						//psmt.setInt (1,scanner.nextInt());
 
 						System.out.print("\n Do you want to Delete more Employeess by IDs (y or n)?");
 
