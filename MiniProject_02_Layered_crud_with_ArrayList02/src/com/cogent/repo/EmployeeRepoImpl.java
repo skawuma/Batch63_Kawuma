@@ -103,9 +103,9 @@ public class EmployeeRepoImpl implements EmployeeRepo {
     	List<EmployeeBean> newList = new ArrayList<>();
 		for(int i =0; i< employees.size();i++) {
 			employee = employees.get(i);
-			//if (employee  == null) {
-			//	System.out.println("Employees  not found with that Country and Matching City!");
-			if
+		      if (employee  == null) 
+				System.out.println("Employees  not found with that Country and Matching City!");
+				else if
 			((employee.getEmployeeCountry().contains(employeeCountry)) ) 
 				newList.add(employee);
 		}	
