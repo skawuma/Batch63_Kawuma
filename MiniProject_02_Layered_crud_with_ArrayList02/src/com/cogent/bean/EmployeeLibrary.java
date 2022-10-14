@@ -147,28 +147,7 @@ public class EmployeeLibrary {
 
 					}
 					break;
-				case 6:
-					answer = 'y';
-					while (Character.toUpperCase(answer) == 'Y') 
-					{
-
-						//Search Employee
-						System.out.println("Please enter A Country");
-						String n1 = scanner.next();
-
-						System.out.println("Please enter A City");
-
-						String n2 = scanner.next();
-
-						List<EmployeeBean> employee = employeeService.displayEmployeeCountryAndCity(n1,n2);
-
-						System.out.print("\n Do you want to Search More Employees In Different Countries and City (y or n)?");
-						answer = keyboard.next().charAt(0);
-
-						if (answer == 'Y');
-
-					}
-					break;
+			
 				case 7:
 					answer = 'y';
 					while (Character.toUpperCase(answer) == 'Y') 
