@@ -8,6 +8,7 @@ import java.io.Serializable;
 
 
 
+
 public class StudentBean  implements Serializable {
 	
 	private static final long serialVersionUID = -226380369717150288L;

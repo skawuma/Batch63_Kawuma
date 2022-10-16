@@ -14,7 +14,7 @@ import com.cogent.bean.EmployeeBean;
  */
 
 public class EmployeeRepoImpl implements EmployeeRepo {
-	List<EmployeeBean> employees = new ArrayList();
+	List<EmployeeBean> employees = new ArrayList<>();
 	{
 		employees.add( new EmployeeBean(1111,"John","Kirk","jkirk@gmail.com","SanFransisco","USA",true,55));
 		employees.add( new EmployeeBean(2222,"Sarah","Dior","sdior@gmail.com","SanFransisco","USA",false,28));

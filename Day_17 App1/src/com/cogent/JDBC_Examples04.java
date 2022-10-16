@@ -213,7 +213,7 @@ public class JDBC_Examples04 {
 						psmt.setInt (1,n2);
 
 						int i = psmt.executeUpdate();
-						System.out.println(i + " No of Recods are Deleted");
+						System.out.println(i + " No of Records are Deleted");
 						psmt.close(); con.close();
 
 						System.out.print("\n Do you want to Delete more Employeess by IDs (y or n)?");
@@ -240,7 +240,7 @@ public class JDBC_Examples04 {
 					
 						int i = psmt.executeUpdate();
 						
-						System.out.println(i + " Recods are Updated");
+						System.out.println(i + " Records are Updated");
 						
 
 						System.out.print("\n Do you want to Update More Employees (y or n)?");

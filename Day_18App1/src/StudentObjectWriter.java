@@ -19,6 +19,7 @@ import java.util.Scanner;
  */
 
 
+
 public class StudentObjectWriter {
 	public static void main(String[] args) {
 		File file = new File ("StudentData.txt");
@@ -57,8 +58,7 @@ public class StudentObjectWriter {
 							stdb.setStdlname(rs.getString(3));
 							stdb.setEmail(rs.getString(4));
 							student.add(stdb);		
-			
-							//System.out.println(stdb);
+						
 						
 						}
 						System.out.println(" Student Records in the list are");
