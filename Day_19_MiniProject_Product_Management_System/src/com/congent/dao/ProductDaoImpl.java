@@ -48,7 +48,7 @@ public class ProductDaoImpl implements ProductDao {
 			e.printStackTrace();
 		}catch (InputMismatchException e) {
 			System.out.println("OOps that was an INVALID INPUT!!!! PLEASE TRY AGAIN");
-			//e.printStackTrace();
+			
 		}
 	}
 	@Override
@@ -67,6 +67,9 @@ public class ProductDaoImpl implements ProductDao {
 
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
+		}catch (InputMismatchException e) {
+			System.out.println("OOps that was an INVALID INPUT!!!! PLEASE TRY AGAIN");
+			
 		}
 	}
 
@@ -84,6 +87,9 @@ public class ProductDaoImpl implements ProductDao {
 			psmt.close();con.close();
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
+		}catch (InputMismatchException e) {
+			System.out.println("OOps that was an INVALID INPUT!!!! PLEASE TRY AGAIN");
+			
 		}
 
 	}
@@ -94,7 +100,7 @@ public class ProductDaoImpl implements ProductDao {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url= "jdbc:mysql://localhost:3306/batch63?characterEncoding=utf8";
 			Connection con = DriverManager.getConnection(url,"root","Stella@1972");
-			Statement st = con.createStatement();
+			//Statement st = con.createStatement();
 
 			PreparedStatement psmt = con.prepareStatement(" SELECT pname, price,pcat FROM Product  WHERE price=(SELECT MIN(price) FROM Product)");
 			ResultSet rs = psmt.executeQuery();
@@ -104,11 +110,16 @@ public class ProductDaoImpl implements ProductDao {
 
 				System.out.println(rs.getString(1)+ "  "+rs.getString(2)+ "  "+rs.getString(3));
 			}
-			rs.close(); st.close(); con.close();
+			rs.close();
+			//st.close(); 
+			con.close();
 
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();	
 
+		}catch (InputMismatchException e) {
+			System.out.println("OOps that was an INVALID INPUT!!!! PLEASE TRY AGAIN");
+			
 		}
 		return null;
 	}
@@ -133,6 +144,9 @@ public class ProductDaoImpl implements ProductDao {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}catch (InputMismatchException e) {
+			System.out.println("OOps that was an INVALID INPUT!!!! PLEASE TRY AGAIN");
+			
 		}
 		return null;
 	}
@@ -142,7 +156,7 @@ public class ProductDaoImpl implements ProductDao {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url= "jdbc:mysql://localhost:3306/batch63?characterEncoding=utf8";
 			Connection con = DriverManager.getConnection(url,"root","Stella@1972");
-			Statement st = con.createStatement();
+			//Statement st = con.createStatement();
 			PreparedStatement psmt = con.prepareStatement(" SELECT * FROM Product WHERE pid=?");
 			psmt.setDouble(1, pId);
 			ResultSet rs = psmt.executeQuery();
@@ -150,12 +164,17 @@ public class ProductDaoImpl implements ProductDao {
 			{
 				System.out.println(rs.getString(2)+"  "+ rs.getString(3)+"  "+ rs.getString(5)); 
 			}
-			rs.close(); st.close(); con.close();
+			rs.close(); 
+			//st.close();
+			con.close();
 
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}catch (InputMismatchException e) {
+			System.out.println("OOps that was an INVALID INPUT!!!! PLEASE TRY AGAIN");
+			
 		}
 
 
@@ -168,7 +187,7 @@ public class ProductDaoImpl implements ProductDao {
 			Class.forName("com.mysql.jdbc.Driver");
 			String url= "jdbc:mysql://localhost:3306/batch63?characterEncoding=utf8";
 			Connection con = DriverManager.getConnection(url,"root","Stella@1972");
-			Statement st = con.createStatement();
+			//Statement st = con.createStatement();
 			PreparedStatement psmt = con.prepareStatement("  SELECT * from Product where expiry_date< Now() ");
 			ResultSet rs = psmt.executeQuery();
 			while (rs.next())
@@ -176,12 +195,17 @@ public class ProductDaoImpl implements ProductDao {
 				System.out.println((rs.getString(2)+ "  "+rs.getString(3)+ "  "+rs.getString(6))); 
 
 			}
-			rs.close(); st.close(); con.close();
+			rs.close();
+			//st.close(); 
+			con.close();
 
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}catch (InputMismatchException e) {
+			System.out.println("OOps that was an INVALID INPUT!!!! PLEASE TRY AGAIN");
+			
 		}
 
 		return null;
@@ -205,6 +229,9 @@ public class ProductDaoImpl implements ProductDao {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}catch (InputMismatchException e) {
+			System.out.println("OOps that was an INVALID INPUT!!!! PLEASE TRY AGAIN");
+			
 		}
 	}
 

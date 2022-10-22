@@ -25,21 +25,23 @@ public class ProductLibrary {
 		Scanner keyboard = new Scanner(System.in);
 		int choice =0;
 
-		System.out.println("*****************************");
+			/**
+			System.out.println("*****************************");
 
-		System.out.println("MENU");
+			System.out.println("MENU");
 
-		System.out.println("*****************************");
+			System.out.println("*****************************");
 
-		System.out.println("1 . INSERT  PRODUCT");
-		System.out.println("2 . DELETE PRODUCT BY ID");
-		System.out.println("3 . DELETE PRODUCT BY CATEGORY");
-		System.out.println("4 . FIND CHEAPEST PRODUCT IN CATEGORY");
-		System.out.println("5 . FIND PRODUCT BY CATEGORY");
-		System.out.println("6 . FIND PRODUCT BY ID");
-		System.out.println("7 . FIND EXPIRED PRODUCTS");
-		System.out.println("8 . UPDATE EMPLOYEE");
-		System.out.println("9 . EXIT");
+			System.out.println("1 . INSERT  PRODUCT");
+			System.out.println("2 . DELETE PRODUCT BY ID");
+			System.out.println("3 . DELETE PRODUCT BY CATEGORY");
+			System.out.println("4 . FIND CHEAPEST PRODUCT IN CATEGORY");
+			System.out.println("5 . FIND PRODUCT BY CATEGORY");
+			System.out.println("6 . FIND PRODUCT BY ID");
+			System.out.println("7 . FIND EXPIRED PRODUCTS");
+			System.out.println("8 . UPDATE EMPLOYEE");
+			System.out.println("9 . EXIT");
+			**/
 
 
 
@@ -47,6 +49,21 @@ public class ProductLibrary {
 			try  {
 				productBean = new ProductBean();
 				System.out.println("PLEASE  REFER to  MENU AND  SELECT ONE OF THE OPTIONS  ");
+				System.out.println("*****************************");
+
+				System.out.println("MENU");
+
+				System.out.println("*****************************");
+
+				System.out.println("1 . INSERT  PRODUCT");
+				System.out.println("2 . DELETE PRODUCT BY ID");
+				System.out.println("3 . DELETE PRODUCT BY CATEGORY");
+				System.out.println("4 . FIND CHEAPEST PRODUCT IN CATEGORY");
+				System.out.println("5 . FIND PRODUCT BY CATEGORY");
+				System.out.println("6 . FIND PRODUCT BY ID");
+				System.out.println("7 . FIND EXPIRED PRODUCTS");
+				System.out.println("8 . UPDATE EMPLOYEE");
+				System.out.println("9 . EXIT");
 				option = scanner.nextInt();
 				switch (option){
 				case 1:
